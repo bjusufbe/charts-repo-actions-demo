@@ -5,7 +5,7 @@ metadata:
   labels:
 {{ include "example.labels" . | indent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ required "A valid entry required for service type!" .Values.service.type }}
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http

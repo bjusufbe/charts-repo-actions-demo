@@ -5,7 +5,7 @@ metadata:
   labels:
 {{ include "example.labels" . | indent 4 }}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ required "A valid entry required for replicas!" .Values.replicaCount }}
   selector:
     matchLabels:
       app.kubernetes.io/name: {{ include "example.name" . }}
