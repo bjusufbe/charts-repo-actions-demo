@@ -8,7 +8,7 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{ include "example.name" . }}
+      app.kubernetes.io/name: {{ include "example.name" . }} # missing tpl helper definition
       app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:

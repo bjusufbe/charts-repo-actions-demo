@@ -2,9 +2,6 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "example.name" -}}
-{{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
-{{- end -}}
 
 {{/*
 Create a default fully qualified app name.
@@ -47,10 +44,3 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "example.serviceAccountName" -}}
-{{- if .Values.serviceAccount.create -}}
-    {{ default (include "example.fullname" .) .Values.serviceAccount.name }}
-{{- else -}}
-    {{ default "default" .Values.serviceAccount.name }}
-{{- end -}}
-{{- end -}}
