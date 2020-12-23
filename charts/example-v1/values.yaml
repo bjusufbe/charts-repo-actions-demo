@@ -1,4 +1,2 @@
-Name: my-alpine
-test:
-#    Name: initial-values123
-     test: test
+replicaCount: 1
+restartPolicy: Always
