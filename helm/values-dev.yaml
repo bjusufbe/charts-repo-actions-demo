@@ -1,0 +1,4 @@
+## Cluster settings - override official bitnami redis helm chart
+cluster:
+  enabled: true
+  slaveCount: 10
