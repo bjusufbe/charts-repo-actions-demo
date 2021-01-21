@@ -32,7 +32,7 @@ securityContext: {}
   # runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: ClusterIP222
   port: 83
 
 ingress:
