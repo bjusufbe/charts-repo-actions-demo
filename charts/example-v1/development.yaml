@@ -1,0 +1,2 @@
+replicaCount: 9
+restartPolicy: OnFailure
