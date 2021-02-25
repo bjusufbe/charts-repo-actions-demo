@@ -1,0 +1,9 @@
+kind: ImageSpec
+metadata:
+  name: redis-latest
+spec:
+  image: redis:latest
+  exposedPorts:
+  - 6379
+  - foo
+

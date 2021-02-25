@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orphan-example1
+  namespace: "default"
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - port: 80
+  selector:
+    app: foo
+
