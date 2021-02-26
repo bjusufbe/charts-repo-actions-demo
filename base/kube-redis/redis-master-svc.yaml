@@ -7,9 +7,6 @@ metadata:
   namespace: "default"
   labels:
     app: redis
-    chart: redis-12.1.1
-    release: default
-    heritage: Helm
 spec:
   type: ClusterIP
   ports:
@@ -18,5 +15,3 @@ spec:
       targetPort: redis
   selector:
     app: redis
-    release: default
-    role: master
