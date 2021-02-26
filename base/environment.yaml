@@ -1,5 +1,0 @@
-kind: Environment
-metadata:
-  name: default
-spec:
-  isDefaultEnvironment: true
